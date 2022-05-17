@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+</head>
+<style>
+</style>
+
+<main>
+    <body class="container">
+        <head class="header">
+            <h1 id="title">Random Survey Title</h1>
+            <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsa.</p>
+        </head>
+        <form id="survey-form">
+            <label for="name-label" id="name-label">Name</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required/>
+            <br>
+            <label for="email-label" id="email-label">Email</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter your name" required/>
+            <br>
+            <label for="number-label" id="number-label">Age</label>
+            <br>
+            <input type="number" name="number" id="number" placeholder="Enter your age" min="0" max="100" required/>
+            <br>
+            <br>
+            <label for="dropdown-label" id="dropdown-label">Select an option from the dropdown</label>
+            <select name="dropdown" id="dropdown">
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+            </select>
+            <br>
+            <br>
+            <p>Yes or No?</p>
+            <input type="radio" name="select-option" id="radio" value="Yes"> Yes
+            <input type="radio" name="select-option" id="radio" value="No"> No
+            <br>
+            <br>
+            <label for="checkboxes">
+                <input type="checkbox" name="checkbox-option" id="checkbox" value="triangle"> Triangle
+                <input type="checkbox" name="checkbox-option" id="checkbox" value="circle"> Circle
+                <input type="checkbox" name="checkbox-option" id="checkbox" value="square"> Square
+            </label>
+            <br>
+            <br>
+            <textarea name="textarea" id="textarea" cols="50" rows="10"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit your choices" id="submit" class="button">
+        </form>
+    </body>
+</main>
+
+</html>
